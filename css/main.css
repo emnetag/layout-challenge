@@ -1,15 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
-body {
-	font-family: 'Lato', 'Helvetica-Neue', Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: 300;
-	background-image: url('../img/background.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-}
-
 a:link {
 	color: #0000AA;
 	text-decoration: none;
@@ -26,6 +17,14 @@ a:hover {
 
 a:focus	{
 	color: #0000EE;
+}
+
+header {
+	padding: 1em;
+	background-color: #FA5A0F;
+	border-bottom-width: 5px;
+	border-bottom-color: #EA4A00;
+	color: #FFFFFF;
 }
 
 h1, h2, h3 {
@@ -45,24 +44,26 @@ h2, h3 {
 h2 {
 	font-size: 150%;
 	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 h3 {
 	font-size: 125%;
 }
 
-header {
-	padding: 1em;
-	background-color: #FA5A0F;
-	border-bottom-width: 5px;
-	border-bottom-color: #EA4A00;
-	color: #FFFFFF;
-}
-
 header p {
 	font-size: 120%;
 	margin: 0px;
 	color: #EEEEEE;
+}
+
+body {
+	font-family: 'Lato', 'Helvetica-Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 main {
@@ -80,15 +81,14 @@ main {
 
 .menu {
 	padding: 1em;
-	background-color: rgb(207,205,140);
+	background-color: rgba(207, 205, 140, 0.5);
 }
 
-dt {
+.menu dt {
 	font-weight: 400;
-	color: #505050;
 }
 
-dd {
+.menu dd {
 	font-size: 80%;
 	font-style: italic;
 	margin-left: 1em;
