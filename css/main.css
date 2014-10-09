@@ -1,29 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
-body {
-	font-family: 'Lato', 'Helvetica-Neue', Helvetica, sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-}
-
-a:link {
-	color: #0000AA;
-	text-decoration: none;
-}
-
-a:visited {
-	color: #0000AA;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #0000EE;
-}
-
-a:focus	{
-	color: #0000EE;
-}
 
 h1, h2, h3 {
 	font-family: 'Raleway', 'Helvetica-Neue', 'Helvetica', sans-serif;
@@ -56,11 +33,49 @@ header {
 	color: #FFFFFF;
 }
 
+li a:link,
+li a:visited {
+	color: #55E;
+}
+
+li a:hover, 
+li a:focus {
+	color: #00E;
+}
+
 header p {
 	display: none;
 	font-size: 120%;
 	margin: 0px;
 	color: #EEEEEE;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 1em;
+}
+
+body {
+	font-family: 'Lato', 'Helvetica-Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+a:link, 
+a:visited {
+	color: #0000AA;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #0000EE;
 }
 
 main {
@@ -72,21 +87,24 @@ main {
 	padding: 1em;
 }
 
-#menu {
+.menu {
 	padding: 1em;
-	background-color: rgb(207,205,140);
+	background-color: rgba(207, 205, 140, 0.5);
 }
 
-dt {
+.menu dt {
 	font-weight: 400;
-	color: #505050;
 }
 
-dd {
+.menu dd {
 	font-size: 80%;
 	font-style: italic;
 	margin-left: 1em;
 	margin-bottom: 1em;
+}
+
+.about {
+	padding: 1em;
 }
 
 footer {
@@ -103,34 +121,11 @@ footer {
 }
 
 .container-fluid {		
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
-nav ul {
-	padding: 0em;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-top: 0px;
-}
-
-nav li {
-	list-style-type: none;
-	display: inline-block;
-	margin-right: 1em;
-}
-
-nav a {
-	color: #55E;
-}
-
-nav a:hover,
-nav a:focus {
-	color: #00E;
-}
-
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
 	body {
 		background-image: url('../img/background.jpg');
 		background-size: cover;
@@ -138,8 +133,19 @@ nav a:focus {
 		font-size: 18px;
 	}
 
+	header {
+		position: relative;
+	}
+
 	header p {
 		display: inline;
+	}
+
+	main {
+		margin-left: 30%;
+		margin-top: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
 	}
 
 	.container-fluid {
@@ -149,16 +155,9 @@ nav a:focus {
 		margin-bottom: 20px;
 	}
 
-	main {
-		margin-left: 30%;
-		margin-top: 20px;
-		margin-right: 20px;
-		margin-bottom: 20px
-	}
-
 	nav {
-		position: relative;
-		top: 20px;
-		right: -20px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
 	}
 }
