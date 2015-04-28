@@ -74,6 +74,14 @@ header p {
 	padding: 1em;
 }
 
+#frame {
+	position: absolute;
+	height: 300px;
+	top: -145px;
+	left: -177px;
+	opacity: 0.5;
+}
+
 footer {
 	padding: 1em;
 	background-color: #FC892F;
